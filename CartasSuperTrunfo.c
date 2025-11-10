@@ -11,7 +11,7 @@ char cidade[50] = 'B'; //Nome da cidade
 int populacao =  100000; //População
 float area = 20000; //Área km
 float pib = 30000; //PIB
-int pontos = 50; //Pontos Turisticos
+int pontos = 50; //Número de Pontos Turisticos
   // Área para entrada de dados
   printf ("CARTA 1"\n)
   printf ("ESTADO"\n)
