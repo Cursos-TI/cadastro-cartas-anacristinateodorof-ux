@@ -22,7 +22,7 @@ int main() {
     float area2;
     float pib2;
 
-    //Capitação de informações sobre as cartas
+    //ENTRADA DE DADOS DA CARTA 1
     printf("PREENCHA AS INFORMAÇÕES DAS SUAS CARTAS \n");
     printf("-----CARTA 1----- \n" );
     printf("Estado: ");
@@ -39,15 +39,49 @@ int main() {
     scanf("%f", &pib1);
     printf("Pontos Turisticos:");
     scanf("%d", &pontos1);
-  
 
+     //ENTRADA DE DADOS DA CARTA 2
+    printf("-----CARTA 2----- \n" );
+    printf("Estado: ");
+    scanf(" %[^\n]", estado2);
+    printf("Código da carta:");
+    scanf("%s", codigo2);
+    printf("Cidade: ");
+    scanf(" %[^\n]", cidade2);
+    printf("População:");
+    scanf("%d", &populacao2);
+    printf("Aréa (km²):");
+    scanf("%f", &area2);
+    printf("PIB: ");
+    scanf("%f", &pib2);
+    printf("Pontos Turisticos:");
+    scanf("%d", &pontos2);
 
+    //EXIBIÇÃO DAS CARTAS CADASTRADAS
+    printf("----CARTAS CADASTRADAS----\n");
+    
+    //CARTA 1
 
+  printf("CARTA 1");
+  printf("Estado: %s\n", estado1);
+  printf("Código da carta: %s\n", codigo1);
+  printf("Cidade: %s\n", cidade1);
+  printf("População: %d\n", populacao1);
+  printf("Área: %.2f km²", area1);
+  printf("PIB: %.2f\n", pib1);
+  printf("Pontos Turisticos: %d\n", pontos1);
 
+  //CARTA 2
 
+  printf("CARTA 2");
+  printf("Estado: %s\n", estado2);
+  printf("Código da carta: %s\n", codigo2);
+  printf("Cidade: %s\n", cidade2);
+  printf("População: %d\n", populacao2);
+  printf("Área: %.2f km²", area2);
+  printf("PIB: %.2f\n", pib2);
+  printf("Pontos Turisticos: %d\n", pontos2);
 
-
-
-    return 0;
+   return 0;
 }
 
