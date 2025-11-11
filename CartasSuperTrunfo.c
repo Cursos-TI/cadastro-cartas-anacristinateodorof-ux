@@ -26,19 +26,19 @@ int main() {
     printf("PREENCHA AS INFORMAÇÕES DAS SUAS CARTAS \n");
     printf("-----CARTA 1----- \n" );
     printf("Estado: ");
-    scanf(" %[^\n]" , estado1);
+    scanf(" %[^\n]", estado1);
     printf("Código da carta:");
-    scanf("%s" , codigo1);
+    scanf("%s", codigo1);
     printf("Cidade: ");
-    scanf(" %[^\n]" , cidade1);
+    scanf(" %[^\n]", cidade1);
     printf("População:");
-    scanf("%d" , &populacao1);
+    scanf("%d", &populacao1);
     printf("Aréa (km²):");
-    scanf("%.2f" , &area1);
+    scanf("%f", &area1);
     printf("PIB: ");
-    scanf("%f" , &pib1);
+    scanf("%f", &pib1);
     printf("Pontos Turisticos:");
-    scanf("%d" , &pontos1);
+    scanf("%d", &pontos1);
   
 
 
