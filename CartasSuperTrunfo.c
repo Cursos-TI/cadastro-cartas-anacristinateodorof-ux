@@ -49,8 +49,8 @@ int main() {
     scanf("%f", &pib1);
     printf("Pontos Turisticos:");
     scanf("%d", &pontos1);
-    printf("Densidade Populacional:" "%.2f" , &densidadepopulacional1);
-    printf("PIB PER CAPITA:"  "%.2f", &pibpercapita1);
+    printf("Densidade Populacional:" "%.2f" , &densidadepopulacional1 "hab/km²");
+    printf("PIB PER CAPITA:"  "%.2f", &pibpercapita1 "Reais");
 
      //ENTRADA DE DADOS DA CARTA 2
     printf("-----CARTA 2----- \n" );
