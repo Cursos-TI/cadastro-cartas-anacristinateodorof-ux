@@ -56,9 +56,6 @@ int main() {
     printf("Estado: ");
     scanf(" %[^\n]", estado2);
     printf("Código da carta:");
-    scanf("%f", &pib2);
-    printf("Pontos Turisticos:");
-    scanf("%d", &pontos2);
     scanf("%s", codigo2);
     printf("Cidade: ");
     scanf(" %[^\n]", cidade2);
@@ -67,7 +64,11 @@ int main() {
     printf("Aréa (km²):");
     scanf("%f", &area2);
     printf("PIB: ");
-
+    scanf("%f", &pib2);
+    printf("Pontos Turisticos:");
+    scanf("%d", &pontos2);
+   
+    
     //DEPOIS DA ENTRADA DOS DADOS 
     pib_per_capita1 = pib1 / populacao1;
     densidade_populacional1 = populacao1 / area1;
