@@ -59,6 +59,14 @@ int main() {
     scanf("%f", &pib2);
     printf("Pontos Turisticos:");
     scanf("%d", &pontos2);
+    scanf("%s", codigo2);
+    printf("Cidade: ");
+    scanf(" %[^\n]", cidade2);
+    printf("População:");
+    scanf("%d", &populacao2);
+    printf("Aréa (km²):");
+    scanf("%f", &area2);
+    printf("PIB: ");
 
     //DEPOIS DA ENTRADA DOS DADOS 
     pib_per_capita1 = pib1 / populacao1;
@@ -96,14 +104,7 @@ int main() {
   printf("Densidade Populacional: %.2f hab/km²\n" , densidade_populacional2 );
   printf("PIB PER CAPITA:  %.2f Reais\n" , pib_per_capita2 );
 
-scanf("%s", codigo2);
-    printf("Cidade: ");
-    scanf(" %[^]", cidade2);
-    printf("População:");
-    scanf("%d", &populacao2);
-    printf("Aréa (km²):");
-    scanf("%f", &area2);
-    printf("PIB: ");
+
     
 
    return 0;
