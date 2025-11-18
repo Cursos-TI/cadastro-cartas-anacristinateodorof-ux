@@ -56,9 +56,9 @@ int main() {
     printf("Estado: ");
     scanf(" %[^\n]", estado2);
     printf("Código da carta:");
-    scanf("%s\n", codigo2);
+    scanf("%s", codigo2);
     printf("Cidade: ");
-    scanf(" %[^\n]", cidade2);
+    scanf(" %[^]", cidade2);
     printf("População:");
     scanf("%d", &populacao2);
     printf("Aréa (km²):");
