@@ -42,13 +42,13 @@ int main() {
     printf("Cidade: ");
     scanf(" %[^\n]", cidade1);
     printf("População:");
-    scanf("%d\n", &populacao1);
+    scanf("%d", &populacao1);
     printf("Aréa (km²):");
-    scanf("%f\n", &area1);
+    scanf("%f", &area1);
     printf("PIB: ");
-    scanf("%f\n", &pib1);
+    scanf("%f", &pib1);
     printf("Pontos Turisticos:");
-    scanf("%d\n", &pontos1);
+    scanf("%d", &pontos1);
     
 
     //ENTRADA DE DADOS DA CARTA 2
@@ -56,7 +56,7 @@ int main() {
     printf("Estado: ");
     scanf(" %[^\n]", estado2);
     printf("Código da carta:");
-    scanf("%s", codigo2);
+    scanf("%s\n", codigo2);
     printf("Cidade: ");
     scanf(" %[^\n]", cidade2);
     printf("População:");
