@@ -15,8 +15,7 @@ int main() {
     float pib_per_capita1;
     float densidade_populacional1;
 
-   pib_per_capita1 = pib1 / populacao1;
-   densidade_populacional1 = area1 / populacao1;
+   
    
 
 
@@ -31,13 +30,9 @@ int main() {
     float pib_per_capita2;
     float densidade_populacional2;
 
-    pib_per_capita2 = pib2 / populacao2;
-    densidade_populacional2 = area2 / populacao2;
+    
 
-
-
-
-    //ENTRADA DE DADOS DA CARTA 1
+   //ENTRADA DE DADOS DA CARTA 1
     printf("PREENCHA AS INFORMAÇÕES DAS SUAS CARTAS \n");
     printf("-----CARTA 1----- \n" );
     printf("Estado: ");
@@ -56,7 +51,7 @@ int main() {
     scanf("%d\n", &pontos1);
     
 
-     //ENTRADA DE DADOS DA CARTA 2
+    //ENTRADA DE DADOS DA CARTA 2
     printf("-----CARTA 2----- \n" );
     printf("Estado: ");
     scanf(" %[^\n]", estado2);
@@ -72,6 +67,12 @@ int main() {
     scanf("%f", &pib2);
     printf("Pontos Turisticos:");
     scanf("%d", &pontos2);
+
+    //DEPOIS DA ENTRADA DOS DADOS 
+    pib_per_capita1 = pib1 / populacao1;
+    densidade_populacional1 = populacao1 / area1;
+    pib_per_capita2 = pib2 / populacao2;
+    densidade_populacional2 = populacao2 / area2 ;
 
     //EXIBIÇÃO DAS CARTAS CADASTRADAS
     printf("----CARTAS CADASTRADAS----\n");
@@ -100,7 +101,7 @@ int main() {
   printf("Área: %.2f km²\n", area2);
   printf("PIB: %.2f\n", pib2);
   printf("Pontos Turisticos: %d\n", pontos2);
-  printf("Densidade Populacional:  %.2f hab/km²\n" , densidade_populacional2 );
+  printf("Densidade Populacional: %.2f hab/km²\n" , densidade_populacional2 );
   printf("PIB PER CAPITA:  %.2f Reais\n" , pib_per_capita2 );
 
 
