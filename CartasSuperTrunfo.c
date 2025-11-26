@@ -130,18 +130,14 @@ long int super_trunfo2 = populacao2 + area2 + pib2 + pontos2 + pib_per_capita2;
 // exibição do resultado
 
 printf("GANHADOR DO JOGO\n");
-printf("1 PARA CARTA *1 e 0 PARA CARTA *2\n\n")
+printf("1 PARA CARTA *1 e 0 PARA CARTA *2\n\n");
 
-printf("População:  ")
-
-
+printf("População: %d\n" , resultado_populacao);
 
 
 
 
-  
 
-    
 
-   return 0;
+  return 0;
 }  
