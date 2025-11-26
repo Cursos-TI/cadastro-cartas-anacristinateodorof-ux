@@ -8,7 +8,7 @@ int main() {
     char estado1[50];
     char cidade1[50];
     char codigo1[50];
-    int populacao1;
+    unsigned long int populacao1;
     int pontos1;
     float area1;
     float pib1;
@@ -16,14 +16,11 @@ int main() {
     float densidade_populacional1;
 
    
-   
-
-
     //Variáveis para a carta 2
     char estado2[50];
     char cidade2[50];
     char codigo2[50];
-    int populacao2;
+    unsigned long int populacao2;
     int pontos2;
     float area2;
     float pib2;
@@ -76,11 +73,11 @@ int main() {
     densidade_populacional2 = populacao2 / area2 ;
 
     //EXIBIÇÃO DAS CARTAS CADASTRADAS
-    printf("----CARTAS CADASTRADAS----\n");
+    printf("----CARTAS CADASTRADAS----\n\n");
     
     //CARTA 1
 
-  printf("****CARTA 1****\n");
+  printf("****CARTA 1****\n\n");
   printf("Estado: %s\n", estado1);
   printf("Código da carta: %s\n", codigo1);
   printf("Cidade: %s\n", cidade1);
@@ -89,12 +86,12 @@ int main() {
   printf("PIB: %.2f\n", pib1);
   printf("Pontos Turisticos: %d\n", pontos1);
   printf("Densidade Populacional:  %.2f hab/km²\n" , densidade_populacional1 );
-  printf("PIB PER CAPITA:  %.2f Reais\n" , pib_per_capita1 );
+  printf("PIB PER CAPITA:  %.2f Reais\n\n" , pib_per_capita1 );
 
 
   //CARTA 2
 
-  printf("****CARTA 2****\n");
+  printf("****CARTA 2****\n\n");
   printf("Estado: %s\n", estado2);
   printf("Código da carta: %s\n", codigo2);
   printf("Cidade: %s\n", cidade2);
@@ -105,6 +102,40 @@ int main() {
   printf("Densidade Populacional: %.2f hab/km²\n" , densidade_populacional2 );
   printf("PIB PER CAPITA:  %.2f Reais\n" , pib_per_capita2 );
 
+//ARMAZENAMENTO DOS DADOS PARA COMPARAÇÃO
+unsigned long int resultado_populacao;
+float resultado_area;
+float resultado_pontos_turisticos;
+float resultado_densidade_populacional;
+float resultados_pib_capita;
+unsigned resultado_super_trunfo;
+
+//COMPARAÇÃO DOS RESULTADOS - DEFININDO O VENCEDOR
+
+ resultado_populacao = 
+ resultado_area
+ resultado_pontos_turisticos = pontos1 > pontos2;
+ resultado_densidade_populacional =
+ resultados_pib_capita = 
+ resultado_super_trunfo =
+
+
+// exibição do resultado
+
+
+
+
+
+
+
+
+
+//printf("População:");
+
+
+
+
+  
 
     
 
