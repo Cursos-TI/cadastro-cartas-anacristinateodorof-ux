@@ -8,7 +8,7 @@ int main() {
     char estado1[50];
     char cidade1[50];
     char codigo1[50];
-    unsigned long int populacao1;
+    long int populacao1;
     int pontos1;
     float area1;
     float pib1;
@@ -105,32 +105,36 @@ int main() {
 //ARMAZENAMENTO DOS DADOS PARA COMPARAÇÃO
 unsigned long int resultado_populacao;
 float resultado_area;
-float resultado_pontos_turisticos;
+float resultado_pontosturisticos;
 float resultado_densidade_populacional;
 float resultados_pib_capita;
-unsigned resultado_super_trunfo;
+long int resultado_super_trunfo;
+long int super_trunfo1;
+long int super_trunfo2;
+
+//ARMAZENAMENTO SUPER TRUNFO - SOMA DO RESULTADO DE CADA CARTA
+
+long int super_trunfo1 = populacao1 + area1 + pib1 + pontos1 + pib_per_capita1;
+long int super_trunfo2 = populacao2 + area2 + pib2 + pontos2 + pib_per_capita2;
 
 //COMPARAÇÃO DOS RESULTADOS - DEFININDO O VENCEDOR
 
- resultado_populacao = 
- resultado_area
- resultado_pontos_turisticos = pontos1 > pontos2;
- resultado_densidade_populacional =
- resultados_pib_capita = 
- resultado_super_trunfo =
+ resultado_populacao = populacao1 > populacao2;
+ resultado_area = area1 > area2;
+ resultado_pontosturisticos = pontos1 > pontos2;
+ resultado_densidade_populacional = densidade_populacional1 < densidade_populacional2;
+ resultados_pib_capita = pib_per_capita1 > pib_per_capita2;
+ resultado_super_trunfo = super_trunfo1 > super_trunfo2;
 
 
 // exibição do resultado
 
+printf("GANHADOR DO JOGO\n");
+printf("1 PARA CARTA *1 e 0 PARA CARTA *2\n\n")
+
+printf("População:  ")
 
 
-
-
-
-
-
-
-//printf("População:");
 
 
 
