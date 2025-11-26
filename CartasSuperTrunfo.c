@@ -8,7 +8,7 @@ int main() {
     char estado1[50];
     char cidade1[50];
     char codigo1[50];
-    long int populacao1;
+    unsigned long int populacao1;
     int pontos1;
     float area1;
     float pib1;
@@ -39,7 +39,7 @@ int main() {
     printf("Cidade: ");
     scanf(" %[^\n]", cidade1);
     printf("População:");
-    scanf("%d", &populacao1);
+    scanf("%lu", &populacao1);
     printf("Aréa (km²):");
     scanf("%f", &area1);
     printf("PIB: ");
@@ -57,7 +57,7 @@ int main() {
     printf("Cidade: ");
     scanf(" %[^\n]", cidade2);
     printf("População:");
-    scanf("%d", &populacao2);
+    scanf("%lu", &populacao2);
     printf("Aréa (km²):");
     scanf("%f", &area2);
     printf("PIB: ");
@@ -81,7 +81,7 @@ int main() {
   printf("Estado: %s\n", estado1);
   printf("Código da carta: %s\n", codigo1);
   printf("Cidade: %s\n", cidade1);
-  printf("População: %d\n", populacao1);
+  printf("População: %lu\n", populacao1);
   printf("Área: %.2f km²\n", area1);
   printf("PIB: %.2f\n", pib1);
   printf("Pontos Turisticos: %d\n", pontos1);
@@ -95,7 +95,7 @@ int main() {
   printf("Estado: %s\n", estado2);
   printf("Código da carta: %s\n", codigo2);
   printf("Cidade: %s\n", cidade2);
-  printf("População: %d\n", populacao2);
+  printf("População: %lu\n", populacao2);
   printf("Área: %.2f km²\n", area2);
   printf("PIB: %.2f\n", pib2);
   printf("Pontos Turisticos: %d\n", pontos2);
@@ -132,7 +132,7 @@ long int super_trunfo2 = populacao2 + area2 + pib2 + pontos2 + pib_per_capita2;
 printf("GANHADOR DO JOGO\n");
 printf("1 PARA CARTA *1 e 0 PARA CARTA *2\n\n");
 
-printf("População: %d\n" , resultado_populacao);
+printf("População: %lu\n" , resultado_populacao);
 
 
 
