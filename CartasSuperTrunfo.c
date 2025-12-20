@@ -102,56 +102,118 @@ int main() {
 //DEFININDO O VENCEDOR COM ESTRUTURA DE DECISÃO E MENU COM SWITCH
 
 
-int primeiroatributo;
-int segundoatributo;
-int resultado1;
-int resultado2;
+int atributo_carta1;
+int atributo_carta2;
+int resultado1 = 1;
+int resultado2 = 0;
 
-printf("\n****ATRIBUTOS****\n");
+printf("\n****ESCOLHA UM DOS ATRIBUTOS DA CARTA 1 PARA COMPARAÇÃO****\n");
 printf("1- POPULAÇÃO\n");
 printf("2- ÁREA\n");
 printf("3- PIB\n");
 printf("4- NÚMERO DE PONTOS TURISTICOS\n");
 printf("5- DENSIDADE DEMOGRÁFICA\n");
 
-printf("**ESCOLHA A PRIMEIRA COMPARAÇÃO");
-scanf("%d", &primeiroatributo);
+printf("**ESCOLHA A PRIMEIRA COMPARAÇÃO**:");
+scanf("%d", &atributo_carta1);
 
-switch(primeiroatributo)
+switch(atributo_carta1)
 {
-case '1':{
+case 1:
 
  printf("\nVOCÊ ESCOLHEU A OPÇÃO POPULAÇÃO\n");
 resultado1 = populacao1 > populacao2 ? 1 : 0;
  
-}break
+break;
 
-case '2':{
- 
-printf("\nVOCÊ ESCOLHEU O ATRIBUTO ÁREA\n");
+case 2:
 
+  printf("\nVOCÊ ESCOLHEU O ATRIBUTO ÁREA\n");
+  resultado1 = area1 > area2 ? 1 : 0;
 
-}break
+break;
 
-case '3':{
+case 3:
  
 printf("\nVOCÊ ESCOLHEU O ATRIBUTO PIB\n");
+resultado1 = pib1 > pib2 ? 1 : 0;
 
-}break
+break;
 
-case '4':{
+case 4:
 
 printf("\nVOCÊ ESCOLHEU O ATRIBUTO PONTOS TURISTICOS\n");
+resultado1 = pontos1 > pontos2 ? 1 : 0;
 
+ break;
+
+case 5:
+
+ printf("\nVOCÊ ESCOLHEU DENSIDADE DEMOGRÁFICA\n");
+resultado1 = densidade_populacional1 < densidade_populacional2 ? 1 : 0;
  
-}break
+break;
 
-case '5':{
- printf("\nVOCÊ ESCOLHEU O ATRIBUTO DENSIDADE DEMOGRÁFICA\n");
-
- 
-}break
+default:
+ printf ("\nOPÇÃO INVALIDA");
 }
+
+printf("\n****ESCOLHA O ATRIBUTO DA SEGUNDA CARTA PARA COMPARAÇÃO****\n");
+printf("1- POPULAÇÃO\n");
+printf("2- ÁREA\n");
+printf("3- PIB\n");
+printf("4- NÚMERO DE PONTOS TURISTICOS\n");
+printf("5- DENSIDADE DEMOGRÁFICA\n");
+
+printf("\n**ESCOLHA A SEGUNDA COMPARAÇÃO**\n");
+scanf("%d", &atributo_carta2);
+
+if (atributo_carta1 != atributo_carta2)
+{ printf("XXXXXXX  VOCÊ NÃO ESCOLHEU O MESMO ATRIBUTO  XXXXXXX");
+ } else{
+
+switch(atributo_carta2)
+{
+case 1:
+
+ printf("\nVOCÊ ESCOLHEU A OPÇÃO POPULAÇÃO\n");
+resultado1 = populacao1 > populacao2 ? 1 : 0;
+ 
+break;
+
+case 2:
+
+  printf("\nVOCÊ ESCOLHEU O ATRIBUTO ÁREA\n");
+  resultado1 = area1 > area2 ? 1 : 0;
+
+break;
+
+case 3:
+ 
+printf("\nVOCÊ ESCOLHEU O ATRIBUTO PIB\n");
+resultado1 = pib1 > pib2 ? 1 : 0;
+
+break;
+
+case 4:
+
+printf("\nVOCÊ ESCOLHEU O ATRIBUTO PONTOS TURISTICOS\n");
+resultado1 = pontos1 > pontos2 ? 1 : 0;
+
+ 
+break;
+
+case 5:
+
+ printf("\nVOCÊ ESCOLHEU O ATRIBUTO DENSIDADE DEMOGRÁFICA\n");
+resultado1 = densidade_populacional1 < densidade_populacional2 ? 1 : 0;
+ 
+break;
+
+default:
+ printf ("\nOPÇÃO INVALIDA\n");
+}
+
 
 
 return 0;
