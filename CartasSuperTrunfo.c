@@ -213,6 +213,14 @@ break;
 default:
  printf ("\nOPÇÃO INVALIDA\n");
 }
+if (resultado1 > resultado2)
+printf("CIDADE %s VENCEU!!!!\n" , cidade1);
+
+else if (resultado1 < resultado2)
+printf("CIDADE %s VENCEU!!!!\n" , cidade2);
+
+else 
+printf ("***EMPATE!!!!***");
 
 
 
