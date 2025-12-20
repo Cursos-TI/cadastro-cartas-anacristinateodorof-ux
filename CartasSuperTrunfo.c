@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include<stdlib.h>
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
@@ -62,7 +61,7 @@ int main() {
     float pib_per_capita1 = pib1 / populacao1;
     float densidade_populacional1 = populacao1 / area1;
     float pib_per_capita2 = pib2 / populacao2;
-    float densidade_populacional2 = populacao2 / area2 ;
+    float densidade_populacional2 = populacao2 / area2;
 
     //ARMAZENAMENTO SUPER TRUNFO - SOMA DO RESULTADO DE CADA CARTA
 
@@ -107,65 +106,52 @@ int primeiroatributo;
 int segundoatributo;
 int resultado1;
 int resultado2;
-int resultado3;
-int resultado4;
-int resultado5;
 
-printf("\n****O PRIMEIRO ATRIBUTO****\n");
+printf("\n****ATRIBUTOS****\n");
 printf("1- POPULAÇÃO\n");
 printf("2- ÁREA\n");
 printf("3- PIB\n");
 printf("4- NÚMERO DE PONTOS TURISTICOS\n");
 printf("5- DENSIDADE DEMOGRÁFICA\n");
+
+printf("**ESCOLHA A PRIMEIRA COMPARAÇÃO");
 scanf("%d", &primeiroatributo);
 
-switch(primeiroatributo){
+switch(primeiroatributo)
+{
+case '1':{
 
-case '1'
-:
  printf("\nVOCÊ ESCOLHEU A OPÇÃO POPULAÇÃO\n");
 resultado1 = populacao1 > populacao2 ? 1 : 0;
  
-}break;
+}break
 
-case '2':
+case '2':{
  
 printf("\nVOCÊ ESCOLHEU O ATRIBUTO ÁREA\n");
-resultado2 = area1 > area2 ? 1 : 0;
 
-}break;
 
-case '3':
+}break
+
+case '3':{
  
 printf("\nVOCÊ ESCOLHEU O ATRIBUTO PIB\n");
 
-resultado3 =  pib1 > pib2 ? 1 : 0;
+}break
+
+case '4':{
+
+printf("\nVOCÊ ESCOLHEU O ATRIBUTO PONTOS TURISTICOS\n");
+
  
-}break;
+}break
 
-case '4':
-
- printf("\nVOCÊ ESCOLHEU O ATRIBUTO PONTOS TURISTICOS\n");
-resultado4 = pontos1 > pontos2 ? 1 : 0;
- 
-}break;
-
-case '5':
+case '5':{
  printf("\nVOCÊ ESCOLHEU O ATRIBUTO DENSIDADE DEMOGRÁFICA\n");
 
  
-}break;
-
-
+}break
 }
-
-
-
-
-
-
-
-
 
 
 return 0;
