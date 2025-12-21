@@ -65,8 +65,8 @@ int main() {
 
     //ARMAZENAMENTO SUPER TRUNFO - SOMA DO RESULTADO DE CADA CARTA
 
-    unsigned int super_trunfo1 = populacao1 + area1 + pib1 + pontos1 + pib_per_capita1;
-    unsigned int super_trunfo2 = populacao2 + area2 + pib2 + pontos2 + pib_per_capita2;
+    float super_trunfo1 = populacao1 + area1 + pib1 + pontos1 + pib_per_capita1;
+    float super_trunfo2 = populacao2 + area2 + pib2 + pontos2 + pib_per_capita2;
 
 //EXIBIÇÃO DAS CARTAS CADASTRADAS
     printf("\n----CARTAS CADASTRADAS----\n");
@@ -83,7 +83,7 @@ int main() {
   printf("Pontos Turisticos: %d\n", pontos1);
   printf("Densidade Populacional:  %.2f hab/km²\n" , densidade_populacional1 );
   printf("PIB PER CAPITA:  %.2f Reais\n\n" , pib_per_capita1 );
-  printf("SUPER TRUNFO: %u \n\n" , super_trunfo1);
+  printf("SUPER TRUNFO: %.2f \n\n" , super_trunfo1);
 
 //EXIBIÇÃO CARTA 2
 
@@ -97,7 +97,7 @@ int main() {
   printf("Pontos Turisticos: %d\n", pontos2);
   printf("Densidade Populacional: %.2f hab/km²\n" , densidade_populacional2 );
   printf("PIB PER CAPITA:  %.2f Reais\n\n" , pib_per_capita2 );
-  printf("SUPER TRUNFO: %u \n\n" , super_trunfo2);
+  printf("SUPER TRUNFO: %.2f \n\n" , super_trunfo2);
 
 //DEFININDO O VENCEDOR COM ESTRUTURA DE DECISÃO E MENU COM SWITCH
 
@@ -105,16 +105,16 @@ int main() {
 int atributo_carta1;
 int atributo_carta2;
 int resultado1 = 1;
-int resultado2 = 0;
+int resultado2;
 
-printf("\n****ESCOLHA UM DOS ATRIBUTOS DA CARTA 1 PARA COMPARAÇÃO****\n");
+printf("\n****ATRIBUTOS DA PRIMEIRA CARTA PARA DEFINIR O VENCEDOR****\n");
 printf("1- POPULAÇÃO\n");
 printf("2- ÁREA\n");
 printf("3- PIB\n");
 printf("4- NÚMERO DE PONTOS TURISTICOS\n");
 printf("5- DENSIDADE DEMOGRÁFICA\n");
 
-printf("**ESCOLHA A PRIMEIRA COMPARAÇÃO**:");
+printf("\n**ESCOLHA O ATRIBUTO DA PRIMEIRA CARTA**\n");
 scanf("%d", &atributo_carta1);
 
 switch(atributo_carta1)
@@ -158,74 +158,69 @@ default:
  printf ("\nOPÇÃO INVALIDA");
 }
 
-printf("\n****ESCOLHA O ATRIBUTO DA SEGUNDA CARTA PARA COMPARAÇÃO****\n");
+printf("\n****ATRIBUTOS DA SEGUNDA CARTA PARA DEFINIR O VENCEDOR****\n");
 printf("1- POPULAÇÃO\n");
 printf("2- ÁREA\n");
 printf("3- PIB\n");
 printf("4- NÚMERO DE PONTOS TURISTICOS\n");
 printf("5- DENSIDADE DEMOGRÁFICA\n");
 
-printf("\n**ESCOLHA A SEGUNDA COMPARAÇÃO**\n");
+printf("\n**ESCOLHA O ATRIBUTO DA SEGUNDA CARTA CARTA**\n");
 scanf("%d", &atributo_carta2);
-
-if (atributo_carta1 != atributo_carta2)
-{ printf("XXXXXXX  VOCÊ NÃO ESCOLHEU O MESMO ATRIBUTO  XXXXXXX");
- } else{
 
 switch(atributo_carta2)
 {
 case 1:
 
  printf("\nVOCÊ ESCOLHEU A OPÇÃO POPULAÇÃO\n");
-resultado1 = populacao1 > populacao2 ? 1 : 0;
+resultado2 = populacao2 > populacao1 ? 1 : 0;
  
 break;
 
 case 2:
 
   printf("\nVOCÊ ESCOLHEU O ATRIBUTO ÁREA\n");
-  resultado1 = area1 > area2 ? 1 : 0;
+  resultado2 = area2 > area1 ? 1 : 0;
 
 break;
 
 case 3:
  
 printf("\nVOCÊ ESCOLHEU O ATRIBUTO PIB\n");
-resultado1 = pib1 > pib2 ? 1 : 0;
+resultado2 = pib2 > pib1 ? 1 : 0;
 
 break;
 
 case 4:
 
 printf("\nVOCÊ ESCOLHEU O ATRIBUTO PONTOS TURISTICOS\n");
-resultado1 = pontos1 > pontos2 ? 1 : 0;
+resultado2 = pontos2 > pontos1 ? 1 : 0;
 
- 
-break;
+ break;
 
 case 5:
 
- printf("\nVOCÊ ESCOLHEU O ATRIBUTO DENSIDADE DEMOGRÁFICA\n");
-resultado1 = densidade_populacional1 < densidade_populacional2 ? 1 : 0;
+ printf("\nVOCÊ ESCOLHEU DENSIDADE DEMOGRÁFICA\n");
+resultado2 = densidade_populacional2 < densidade_populacional1 ? 1 : 0;
  
 break;
 
 default:
- printf ("\nOPÇÃO INVALIDA\n");
+ printf ("\nOPÇÃO INVALIDA");
 }
-if {(resultado1 > resultado2)
-printf("CIDADE %s VENCEU!!!!\n" , cidade1);
+if (resultado1 > resultado2){
+printf("\n*#*#*#CIDADE %s VENCEU!!!!#*#*#*\n" , cidade1);
 }
-else if {(resultado1 < resultado2)
-printf("CIDADE %s VENCEU!!!!\n" , cidade2);
-}
-else {
-printf ("***EMPATE!!!!***");
-}
+else if (resultado1 < resultado2)
+printf("\n*#*#*#CIDADE %s VENCEU!!!!#*#*#*\n" , cidade2);
+
+else 
+printf ("\n***EMPATE!!!!***");
+
 
 
 return 0;
-}  
+}
 
   
 
