@@ -171,6 +171,15 @@ default:
     printf("\nOPÇÃO INVÁLIDA\n");
     return 0;
 }
+if (resultado == 1) {
+    printf("\n*#*#*# CIDADE %s VENCEU! #*#*#*\n", cidade1);
+}
+else if (resultado == -1) {
+    printf("\n*#*#*# CIDADE %s VENCEU! #*#*#*\n", cidade2);
+}
+else {
+    printf("\n*** EMPATE! ***\n");
+}
 
 
 return 0;
