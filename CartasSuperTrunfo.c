@@ -59,9 +59,9 @@ int main() {
    
      //VARIAVEIS DEPOIS DA ENTRADA DOS DADOS 
     float pib_per_capita1 = pib1 / populacao1;
-    float densidade_populacional1 = populacao1 / area1;
+    float densidade_populacional1 = (float)populacao1 / area1;
     float pib_per_capita2 = pib2 / populacao2;
-    float densidade_populacional2 = populacao2 / area2;
+    float densidade_populacional2 = (float)populacao2 / area2;
 
     //ARMAZENAMENTO SUPER TRUNFO - SOMA DO RESULTADO DE CADA CARTA
 
@@ -105,7 +105,7 @@ int main() {
 int atributo_carta1;
 int atributo_carta2;
 int resultado1 = 1;
-int resultado2;
+int resultado2 = 0;
 
 printf("\n****ATRIBUTOS DA PRIMEIRA CARTA PARA DEFINIR O VENCEDOR****\n");
 printf("1- POPULAÇÃO\n");
@@ -167,6 +167,11 @@ printf("5- DENSIDADE DEMOGRÁFICA\n");
 
 printf("\n**ESCOLHA O ATRIBUTO DA SEGUNDA CARTA CARTA**\n");
 scanf("%d", &atributo_carta2);
+
+if (atributo_carta1 != atributo_carta2){
+printf("XXXXXXXXX O ATRIBUTO ESCOLHIDO É DISTINTO XXXXXXXXX");
+}
+
 
 switch(atributo_carta2)
 {
